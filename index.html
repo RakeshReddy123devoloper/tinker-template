@@ -15,24 +15,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap-reboot.min.css">
 <style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
 .sai1{
     height:100vh;
     width: 100vw;
     background-image: url(banner_bg.jpg);
     background-size: cover;
 }
-
    .sai{
     font-size: 30px;
     color: white;
+    padding-top: 2vh;
  
   } 
 .icon1{
   font-size: 40px;
   color: rgb(237, 233, 233);
-  margin-left: 80vw;
-  margin-top: 0vh;
+  margin-left: 70vw;
+  margin-top:0vh;
 }
 .nav-link{
   color: white;
@@ -48,9 +53,10 @@
 }
 .sai2 h2{
   color: white;
- padding-top: 10vh;
- padding-left: 10vh;
-  font-size: 40px;
+margin-top: auto;
+ text-align: center;
+ font-size:10vh;
+
 }
 .yellow{
   color: yellow;
@@ -60,10 +66,9 @@
   display: grid;
   grid-template-columns:120px 120px 120px;
   justify-content: center;
-  margin-top:vh;
   margin:auto;
   color: white;
-  position:sticky;
+ 
 }
 }
 @media screen and (min-width:386px) {
@@ -91,7 +96,7 @@
   justify-content: center;
   color: white;
   gap: 4%;
-
+margin-top: -10vh;
 }
 }
 
@@ -173,6 +178,7 @@ color: white;
   gap:3%;
   align-items: center;
   align-content: center;
+  margin-top:25vh;
 }
   /* @media screen and (max-width:929px){ 
   .raki{
@@ -207,22 +213,29 @@ color: white;
 }
 } */
 .balu1{
-  width:40vw;
-  height: 120vh;
   background-color: aqua;
   display: grid;
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding-left:5vw;
-  padding: 10vh;
-  text-align: center;
+text-align: center;
+font-weight: bold;
+color:white;
+font-size: 2vh;
+
+  
 }
 .balu2{
+  display: grid;
+  grid-template-columns:30% 30% 30%;
   width: 70vw;
   height: 120vh;
-  background-color: rgb(103, 111, 111);
-  display: grid;
+  background-color: rgb(231, 238, 238);
+  /* padding-bottom: 40vh;
+  padding-top: 40vh; */
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .balu{
   display: grid;
@@ -233,9 +246,90 @@ color: white;
 color: rgb(25, 33, 33);
 text-align: center;
 font-size: 90%;
+color: white;
+text-decoration: none;
+padding:1vh;
+font-size: 3vh;
 }
-.balu8{
-margin-top:5%;
+.balu4{
+width:22vw;
+height:40vh;
+padding: 1vh;
+border-radius:20px;
+box-shadow: 0 0 10% solid black;
+}
+/* .balu5{
+  width:20vh;
+  height:20vh;
+}
+.balu6{
+  width:20vh;
+  height:20vh;
+} */
+.ran{
+  color: black;
+}
+.ran1{
+  font-weight: bold;
+  font-size:4vh;
+}
+@media screen and (max-width:425px) {
+ .raki{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 160vh;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+
+ }
+ .raki2{
+  margin: auto;
+  width:15vh;
+ }
+}
+@media screen and (max-width:425px){
+
+  .balu1{
+ text-align: center;
+ font-size:2vh;
+ }
+ .balu3{
+  font-size: 2vh;
+  text-align: center;
+ }
+ .ran1{
+  font-size:2vh;
+  text-align: center;
+ }
+}
+@media screen and (max-width:425px){
+.balu2{
+display: flex;
+flex-wrap:wrap;
+}
+.balu4{
+width:50vw;
+height:20vh;
+padding: 10px;
+}
+}
+.kiran{
+  width:100%;
+  height: 70vh;
+  background-color: yellow;
+ padding-top:20vh;
+}
+.kiran1{
+  background-color: white;
+  height: 20vh;
+  width: 60vw;
+ margin:auto;
+ border-radius:20px;
+}
+i{
+  text-align: center;
 }
 
 </style>
@@ -243,7 +337,7 @@ margin-top:5%;
 <body>
      <div class="sai1">
       <div class="sai2"><h2><span class="yellow">t</span>inker</h2></div>
-        <nav class="navbar-expand-sm fixed-top">
+        <nav class="navbar-expand-sm">
             <button type="button" class="navbar-toggler" style="color:rgb(238, 19, 19)" data-toggle="collapse" data-target="#collapsible-navbar"><ion-icon  class="icon1" name="menu-outline"></ion-icon></button>
                 <div class="collapse navbar-collapse" id="collapsible-navbar">
                 <div class="navbar-nav">
@@ -266,9 +360,9 @@ margin-top:5%;
              <div class="sai8"><a class="sai9" href=""><h4>lets starts</h4></a></div>
              </div>
     </div> 
-  </div>
-  
-  <div class="raki">
+
+
+<div class="raki">
     <div class="raki1">
 <div class="raki2"><img class="raki6" src="service_icon_01.png"></div>
 <p class="raki3">smart notifications</p><hr>
@@ -294,22 +388,31 @@ margin-top:5%;
       <button class="raki5"><a href="">continue reading</a></button>
   </div>
 </div>
-    <div class="balu">
+     <div class="balu">
    <div class="balu1">
-<h5>OUR GALLERY</h5><hr>
-   <P>In malesuada placerat <br>ligula et bibendum. Aenean eget urna enim. Sed enim ante, bibendum nec dictum ac, gravida ac lectus.</P>
- <div><button class="balu8"><a class="balu3" href="">show all</a></button></div>
- <div><button class="balu8"><a class="balu3" href="">branding</a></button></div>
- <div><button class="balu8"><a class="balu3" href="">graphic</a> </button></div>
- <div><button class="balu8"><a class="balu3" href="">nature</a> </button> </div>
- <div><button class="balu8"><a class="balu3" href="">animation</a</button></div>
-
+<h5 class="ran1">OUR GALLERY</h5><hr class="ran">
+   <P>In malesuada placerat ligula et bibendum. Aenean eget urna enim. Sed enim ante, bibendum nec dictum ac, gravida ac lectus.</P>
+<a class="balu3" href="">show all</a>
+<a class="balu3" href="">branding</a>
+<a class="balu3" href="">graphic</a> 
+<a class="balu3" href="">nature</a> 
+<a class="balu3" href="">animation</a>
   </div>
-   <div class="balu2">
-
+    <div class="balu2">
+<img class="balu4 balu5" src="portfolio_big_item_01.jpg">
+<img class="balu4  balu5" src="portfolio_big_item_02.jpg">
+<img class="balu4 balu6" src="portfolio_item_03.jpg">
+<img class="balu4 balu5" src="portfolio_big_item_04.jpg">
+<img class="balu4 balu6" src="portfolio_item_05.jpg">
+<img class="balu4 balu6" src="portfolio_item_06.jpg">
      </div>
-
-    </div>     
-        </div>         
+    </div> 
+ <div class="kiran">
+      <div class="kiran1"> 
+        
+      <i><P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus aspernatur repellendus nobis error repudiandae nisi libero praesentium sunt officiis corrupti totam molestiae voluptatem ad cumque, facilis temporibus. Adipisci, quia.</P></i>
+      
+      </div>
+ </div>  
        </body>
 </html>
